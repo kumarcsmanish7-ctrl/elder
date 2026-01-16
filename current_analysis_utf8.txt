@@ -1,0 +1,12 @@
+﻿Analyzing daily_reminder...                                     
+
+warning - The include file 'package:flutter_lints/flutter.yaml' in 'C:\Users\Nikitha\.gemini\antigravity\scratch\daily_reminder\analysis_options.yaml' can't be found when analyzing 'C:\Users\Nikitha\.gemini\antigravity\scratch\daily_reminder' - analysis_options.yaml:10:10 - include_file_not_found
+warning - Unused import: 'dart:io' - lib\state\app_provider.dart:2:8 - unused_import
+warning - The declaration '_handleDoneAction' isn't referenced - lib\state\app_provider.dart:194:8 - unused_element
+  error - The method 'firstWhereOrNull' isn't defined for the type 'List' - lib\state\app_provider.dart:214:35 - undefined_method
+  error - The method 'firstWhereOrNull' isn't defined for the type 'List' - lib\state\app_provider.dart:216:35 - undefined_method
+  error - The method 'firstWhereOrNull' isn't defined for the type 'List' - lib\state\app_provider.dart:219:35 - undefined_method
+  error - The method 'firstWhereOrNull' isn't defined for the type 'List' - lib\state\app_provider.dart:222:35 - undefined_method
+  error - The method 'firstWhereOrNull' isn't defined for the type 'List' - lib\state\app_provider.dart:224:35 - undefined_method
+  error - The method 'firstWhereOrNull' isn't defined for the type 'List' - lib\state\app_provider.dart:227:35 - undefined_method
+

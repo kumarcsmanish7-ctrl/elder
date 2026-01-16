@@ -1,0 +1,27 @@
+﻿Analyzing daily_reminder...                                     
+
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:10:3 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:28:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:31:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:53:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:66:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:75:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:83:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:146:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:148:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:175:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\services\notification_service.dart:190:7 - avoid_print
+warning - Unused import: 'dart:io' - lib\state\app_provider.dart:3:8 - unused_import
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:78:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:192:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:200:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:206:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:215:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:328:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:342:12 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:358:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:429:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:441:12 - avoid_print
+   info - Don't invoke 'print' in production code - lib\state\app_provider.dart:447:5 - avoid_print
+   info - Unnecessary use of 'toList' in a spread - lib\widgets\reminder_card.dart:224:18 - unnecessary_to_list_in_spreads
+

@@ -1,0 +1,29 @@
+﻿Analyzing daily_reminder...                                     
+
+warning - The include file 'package:flutter_lints/flutter.yaml' in 'C:\Users\Nikitha\.gemini\antigravity\scratch\daily_reminder\analysis_options.yaml' can't be found when analyzing 'C:\Users\Nikitha\.gemini\antigravity\scratch\daily_reminder' - analysis_options.yaml:10:10 - include_file_not_found
+  error - Target of URI doesn't exist: '../service/notification_service.dart' - lib\screens\home_screen.dart:6:8 - uri_does_not_exist
+  error - The named parameter 'floatingActionButton' isn't defined - lib\screens\home_screen.dart:15:9 - undefined_named_parameter
+  error - The method 'NotificationService' isn't defined for the type 'HomeScreen' - lib\screens\home_screen.dart:17:21 - undefined_method
+warning - Unused import: '../models/reminder_model.dart' - lib\screens\set_time_screen.dart:4:8 - unused_import
+warning - Unused import: '../models/settings_model.dart' - lib\screens\settings_screen.dart:3:8 - unused_import
+
+flutter : 6 issues 
+found. (ran in 4.7s)
+At line:1 char:1
++ flutter analyze 
+--no-pub > 
+analysis_3.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (6 issue   
+ s found. (ran in    
+ 4.7s):String) [    
+], RemoteExcepti    
+on
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
