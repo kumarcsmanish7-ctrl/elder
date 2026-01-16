@@ -1,54 +1,38 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'state/app_provider.dart';
+import 'firebase_options.dart';
 import 'screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  
+  // Initialize Firebase
+  // Note: Ensure you have configured Firebase and updated firebase_options.dart
+  // If you haven't, running this will fail. 
+  // For now, we wrap in try-catch to allow UI to run if config is missing (for demo purposes)
+  try {
+    await Firebase.initializeApp();
+  } catch (e) {
+    print("Firebase initialization failed: $e. Did you setup firebase_options.dart?");
+  }
+
+  runApp(const ElderlyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ElderlyApp extends StatelessWidget {
+  const ElderlyApp({super.key});
 
   @override
-  Widget build(BuildContext context)
-  {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => AppProvider()),
-      ],
-      child: MaterialApp(
-        title: 'Daily Reminder',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFF4DB6AC), // Light teal (1 shade lighter)
-            surface: const Color(0xFFF5F5F5), // Soft light background
-          ),
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Color(0xFF4DB6AC), // Light teal
-            foregroundColor: Colors.white,
-            elevation: 2,
-            centerTitle: true,
-          ),
-          // Elder-friendly text theme
-          textTheme: const TextTheme(
-            displayLarge: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, color: Colors.black87),
-            displayMedium: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black87),
-            displaySmall: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black87),
-            titleLarge: TextStyle(fontSize: 26, fontWeight: FontWeight.w600, color: Colors.black87),
-            titleMedium: TextStyle(fontSize: 22, fontWeight: FontWeight.w600, color: Colors.black87),
-            titleSmall: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.black87),
-            bodyLarge: TextStyle(fontSize: 22, color: Colors.black87),
-            bodyMedium: TextStyle(fontSize: 20, color: Colors.black87),
-            bodySmall: TextStyle(fontSize: 18, color: Colors.black87),
-            labelLarge: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-        ),
-        home: const HomeScreen(),
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Elderly App',
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+        useMaterial3: true,
       ),
+      home: const HomeScreen(),
     );
   }
 }
+

@@ -43,10 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-analysis_*.txt
-build_error*.txt
-current_analysis*.txt
-final_analysis*.txt
-flutter_*.png
-build/
-elder/

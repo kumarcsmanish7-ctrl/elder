@@ -1,6 +1,6 @@
 {
-    "name": "daily_reminder",
-    "short_name": "daily_reminder",
+    "name": "elderly_app",
+    "short_name": "elderly_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
