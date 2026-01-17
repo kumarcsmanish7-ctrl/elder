@@ -11,13 +11,13 @@ import 'features/community_activity/services/firestore_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  
   // Initialize Firebase
   try {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-
+    
     // Enable offline persistence for auth state
     await FirebaseAuth.instance.setPersistence(Persistence.LOCAL);
     print("✅ Firebase initialized with persistent auth");
@@ -33,11 +33,11 @@ void main() async {
 
 Future<void> _initializeElderApp() async {
   final firestoreService = FirestoreService();
-
+  
   try {
     // Check if there's already a signed-in user
     User? currentUser = FirebaseAuth.instance.currentUser;
-
+    
     if (currentUser == null) {
       // Only sign in anonymously if no user exists
       print("🔐 Elder App: No user found, signing in anonymously...");
@@ -45,11 +45,11 @@ Future<void> _initializeElderApp() async {
     } else {
       print("✅ Elder App: Existing user found: ${currentUser.uid}");
     }
-
+    
     if (currentUser != null) {
       print("🚀 Elder App: Seeding activities if needed...");
       await firestoreService.refreshActivitiesWithDummyData(
-        baseLat: 12.9716,
+        baseLat: 12.9716, 
         baseLon: 77.5946
       );
       print("✅ Elder App initialized.");
